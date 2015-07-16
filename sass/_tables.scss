@@ -89,7 +89,7 @@ form {
   border: solid $babyBlue 2px;
   background-color: $babyBlueOp;
   font-weight: bolder;
-  opacity: 0.5;
+  // opacity: 0.5;
   box-shadow: inset 0 1px 3px #ddd;
   border-radius: 5px;
   width: 10em;
@@ -103,8 +103,6 @@ form {
   cursor: pointer;
 }
 .button:active {
-  // color: white;
   font-weight: normal;
   border: solid $babyBlueOp 5px;
-  // background-color: $babyBlueOp;
 }
