@@ -1,0 +1,128 @@
+doctype html
+html
+  head
+    title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.jumbotron
+    div.outer-container
+      div.wrapper
+        div.block
+          h1 This is an example of Heading 1
+          h2 This is an example of heading 2
+          h3 This is an example of heading 3
+          h4 This is an example of heading 4
+          h5 This is an example of heading 5
+          h6 This is an example of heading 6
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        div.block
+          h1 This is an example of Heading 1
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h2 This is an example of heading 2
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h3 This is an example of heading 3
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h4 This is an example of heading 4
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h5 This is an example of heading 5
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h6 This is an example of heading 6
+          p
+            | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p
+            | Some inline examples. 
+            strong This is strong text
+            | , consectetur adipisicing elit, 
+            em this is text with emphasis
+            |  ut labore et dolore magna aliqua. 
+            a(href='/') This is linked text
+            |  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          ul
+            li An unorder list
+            li With another item
+            li An more items
+          ol
+            li An order list
+            li With another item
+            li An more items
+          h4 Table Example
+          table
+            thead
+              tr
+                th Name
+                th Address
+                th Phone
+            tbody
+              tr
+                td Nicholas
+                td 10 Elm Street
+                td +1 (555) 234-2322
+              tr
+                td Ted
+                td 281a Elmvale Road
+                td +1 (555) 389-2391
+              tr
+                td Dwayne
+                td 892 Henley Cresent
+                td +1 (555) 950-9234
+        div.block
+          h4(style='margin-top: 0.4em;') Form Example
+          div.form
+            form(action='/demo', method='get')
+              div.text-fields
+                p.text-input
+                  label First Name
+                  input(type='text', placeholder='First Name')
+                p.text-input
+                  label Last Name
+                  input(type='text', placeholder='Last Name')
+                br
+              div.text-fields
+                p.text-input
+                  label Email
+                  input(type='text', placeholder='Email')
+                p.text-input
+                  label Password
+                  input(type='password', placeholder='Password')
+              p.message
+                label Gender
+                  br
+                  input(type='radio')
+                  label Male
+                  input(type='radio')
+                  label Female
+                  input(type='radio')
+                  label Other
+              div.countries
+                //- p.text-input
+                //-   label Country
+                //-   select
+                //-     option New Zealand
+                //-     option Canada
+                //-     option United States
+                p.text-input
+                  label Country
+                  select.select-multipule(multiple='multiple')
+                    option New Zealand
+                    option Canada
+                    option United States
+              p.message
+                label Message
+                br
+                textarea.textarea Your text here
+              p
+                input(type='checkbox')
+                label Agree to Terms & Conditions
+              br
+              p
+                input.button(type='button', value='Send')
+              p
+                input.button(type='submit', value='To Demo', style="margin-left: 20px;")
+      div.footer
+        p(style='color: white; margin-left: 5px;') Andrew Cer 2015

@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.jumbotron(style='background: url("http://bridgeoceans.com/wp-content/uploads/2015/03/idacs_blank_banner.jpg") no-repeat fixed;')
+    div.outer-container
+      div.wrapper
+        div.block
+          h4(style='margin-top: 0; padding-top: 20px;') New Blog Post
+          div.form
+            form(action='/demo', method='get')
+              div.text-fields
+                p.text-input
+                  label Title
+                  input(type='text', placeholder='Title')
+                p.text-input
+                  label Subject
+                  input(type='text', placeholder='Subject')
+              p.message
+                label Whats on Your Mind?
+                br
+                textarea.textarea Tell me everything
+              p
+                input(type='checkbox')
+                label Agree to Terms & Conditions (your soul now belongs to us)
+              br
+              p
+                input.button(type='button', value='Create Post')
+      div.footer
+        p(style='color: white; margin-left: 5px;') Andrew Cer 2015

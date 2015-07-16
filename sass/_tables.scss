@@ -1,0 +1,110 @@
+ul, ol {
+  display: inline-block;
+  margin-left: 20%;
+}
+ul {
+  list-style: circle;
+}
+ol {
+  list-style: lower-roman;
+}
+
+table {
+  width: 100%;
+  th {
+    font-weight: bold;
+    border-bottom: solid black 1px;
+  }
+  tbody {
+    td {
+      text-align: center;
+      padding: 0.4em;
+    }
+    tr:nth-child(odd) {
+      background-color: white;
+    }
+  }
+}
+.form {
+
+}
+form {
+  margin: 0 auto;
+  max-width: 40em;
+  .text-fields .text-input:nth-child(even) {
+    margin-left: 5em;
+  }
+  p {
+    display: inline-block;
+  }
+  input:focus {
+    outline: 0;
+  }
+  select:focus {
+    outline: 0
+  }
+  .textarea:focus {
+    outline: 0
+  }
+  .text-input {
+    label {
+      display: block;
+      margin-bottom: 0.4em;
+    }
+    input {
+      border: none;
+      box-shadow: inset 0 1px 3px #ddd;
+      padding-left: 10px;
+      width: 13em;
+      height: 3em;
+      border-radius: 5px;
+    }
+    select {
+      border: none;
+      background-color: white;
+      box-shadow: inset 0 1px 3px #ddd;
+      width: 10em;
+      height: 3em;
+      border-radius: 5px;
+    }
+    .select-multipule {
+      height: 4em;
+    }
+  }
+  .textarea {
+    border: none;
+    box-shadow: inset 0 1px 3px #ddd;
+    padding-left: 10px;
+    width: 45em;
+    height: 15em;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-top: 8px;
+  }
+  .message {
+    display: block;
+  }
+}
+.button {
+  border: solid $babyBlue 2px;
+  background-color: $babyBlueOp;
+  font-weight: bolder;
+  opacity: 0.5;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 5px;
+  width: 10em;
+  height: 5em;
+  font-size: 1em;
+  color: white;
+}
+.button:hover {
+  background-color: $offWhite;
+  color: $babyBlue;
+  cursor: pointer;
+}
+.button:active {
+  // color: white;
+  font-weight: normal;
+  border: solid $babyBlueOp 5px;
+  // background-color: $babyBlueOp;
+}
